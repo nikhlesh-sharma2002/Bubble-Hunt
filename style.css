@@ -1,0 +1,264 @@
+/* start page*/
+
+body.start-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(
+        circle at top,
+        rgb(202, 238, 202),
+        rgb(72, 104, 72)
+    );
+    margin: 0;            
+    font-family: 'Gilroy', sans-serif;
+  }
+
+  
+.start-container {
+    text-align: center;
+  }
+
+  
+.game-title {
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+  }
+  
+
+.start-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 3px solid #fff;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  
+.start-btn:hover {
+    background-color: #fff;
+    color: rgb(72, 104, 72);
+    transform: scale(1.1);
+  }
+
+
+.made-with {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    
+  }
+  
+
+  
+  
+/* game page*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy', sans-serif;
+    box-sizing: border-box;
+}
+
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(202, 238, 202);
+}
+
+#panel {
+    overflow: hidden;
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#ptop {
+    padding: 0px 5%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(72, 104, 72 );
+} 
+
+.element {
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.element h2 {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.box {
+    color: rgb(72, 104, 72);
+    font-weight: 600;
+    font-size: 22px ;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+#pbtm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    height: 90%;
+    background-color:#fff;
+    gap: 5px;
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(72, 104, 72);
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 500;
+}
+
+.bubble:hover {
+    cursor: pointer;
+    color: black;
+    background-color: rgb(202, 238, 202);
+}
+
+.game-over {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+.game-over-text {
+  font-size: 5rem;
+  color: rgba(72, 104, 72);
+  margin-bottom: 2rem;
+}
+
+
+.restart-btn {
+    display: inline-block;
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(72, 104, 72);
+    background-color: #fff;
+    border: 3px solid rgba(72, 104, 72);
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  
+.restart-btn:hover {
+    background-color:rgb(72, 104, 72);
+    color: #fff;
+    transform: scale(1.1);
+  }
+
+  #main .made-with {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgb(72, 104, 72);
+    bottom: 5px;
+  }
+
+
+
+@media screen and (max-width: 768px) {
+
+    #panel {
+        width: 95%;
+        height: 95%;
+    }
+
+    #ptop {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .element {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .element h2,
+    .box {
+        font-size: 18px;
+    }
+
+    .box {
+        padding: 8px 16px;
+    }
+
+    #pbtm {
+        padding: 10px;
+        gap: 8px;
+    }
+
+    .bubble {
+        width: 43.3px;
+        height: 43.3px;
+        font-size: 16px;
+    }
+
+    .game-over-text {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .restart-btn {
+        padding: 0.75rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    #main .made-with {
+        font-size: 0.75rem;
+        bottom: 2px;
+    }
+}
+
